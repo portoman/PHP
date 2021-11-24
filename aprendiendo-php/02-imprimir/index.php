@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8"/>
-        <title>Imprimir por la pantalla</title>
+        <title>Imprimir por pantalla</title>
     </head>
     <body>
         <h1>Master en PHP con Alfonso Porto</h1>
