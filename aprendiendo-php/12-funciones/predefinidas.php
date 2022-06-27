@@ -27,7 +27,6 @@ echo "Número pi" . pi();
 echo"<br/>";
 echo "Redondear: " . round(7.893234, 2);
 
-
 //Más funciones generales
 echo "<br/>";
 echo gettype($nombre);
@@ -49,27 +48,26 @@ if (isset($edad)) {
 //Trim
 echo"<br/>";
 
-$cadena2="      hola      ";
+$cadena2 = "      hola      ";
 echo trim($cadena2);
-
 
 //Eliminar variables / indices
 echo"<br/>";
-$year=2020;
+$year = 2020;
 unset($year);
 
 //Comprobar variables vacias
 
-$texto=" ";
-if(empty($texto)){
+$texto = " ";
+if (empty($texto)) {
     echo"La variable está vacia";
-}else{
+} else {
     echo"La variable no está vacia";
 }
 
 //Contar caracteres de una cadena
 echo"<br/>";
-$cadena4="12345";
+$cadena4 = "12345";
 
 echo strlen($cadena4);
 
@@ -77,19 +75,17 @@ echo"<br/>";
 
 //Econtrar un caracter
 
-$frase="La vida es bella";
+$frase = "La vida es bella";
 echo strpos($frase, "vida");
 
 //Reemplazar contenido de un string
 echo"<br/>";
 
-$frase=str_replace("vida", "moto", $frase);
-
+$frase = str_replace("vida", "moto", $frase);
 
 //Convierte a MAYUSCULAS
 echo"<br/>";
 echo strtoupper($frase);
-
 
 //Convierte a minúsculas
 echo"<br/>";

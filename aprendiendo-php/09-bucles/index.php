@@ -2,17 +2,17 @@
 
 //While
 
-$indice=5;
+$indice = 5;
 
-while($indice<10){
-    echo "Imprime una vez ".$indice."<br>";
+while ($indice < 10) {
+    echo "Imprime una vez " . $indice . "<br>";
     $indice++;
 }
 
 //Do while
 
-$numero=-1;
+$numero = -1;
 
-do{
+do {
     echo "Imprime";
-}while($numero > 0);
+} while ($numero > 0);

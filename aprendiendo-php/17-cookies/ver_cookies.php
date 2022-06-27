@@ -12,7 +12,7 @@ if(isset($_COOKIE['micookie'])){
 
 if(isset($_COOKIE['ayear'])){
     echo "<h1>".$_COOKIE['ayear']."</h1>";
-}else{
+}else {
     echo "No existe la cookie";
 }
 

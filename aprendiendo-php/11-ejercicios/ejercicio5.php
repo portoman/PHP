@@ -11,8 +11,6 @@ if (isset($_GET['numero1']) && isset($_GET['numero2'])) {
 
     $numero2 = $_GET['numero2'];
 
-
-
     if ($numero1 < $numero2) {
 
         for ($i = $numero1; $i <= $numero2; $i++) {

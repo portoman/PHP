@@ -1,3 +1,3 @@
 <footer>
-    Todos los derechos reservados  &copy; <?=$nombre?> <?= date('Y') ?>
+    Todos los derechos reservados  &copy; <?= $nombre ?> <?= date('Y') ?>
 </footer>

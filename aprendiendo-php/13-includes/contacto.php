@@ -1,4 +1,4 @@
-<?php require 'includes/cabecera.php';//Con require, si hay algún error la página no se carga. Con include, se carga la página igual
+<?php require 'includes/cabecera.php'; //Con require, si hay algún error la página no se carga. Con include, se carga la página igual
 ?>
 <!-- Contenido -->
 <div>
@@ -7,7 +7,7 @@
 </div>
 <hr/>
 <!-- Footer -->
-<?php require_once 'includes/footer.php';//require_once solo cargará una vez
+<?php require_once 'includes/footer.php'; //require_once solo cargará una vez
 ?>
 </body>
 </html>

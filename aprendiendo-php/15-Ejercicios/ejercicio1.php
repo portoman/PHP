@@ -1,33 +1,30 @@
 <?php
 
-/* 
- Ejercicio 1: Hacer un programa que tenga un array con 8 números que haga:
+/*
+  Ejercicio 1: Hacer un programa que tenga un array con 8 números que haga:
  * -Recorrerlo y mostrarlo
  * -Ordenarlo y mostrarlo
  * -Mostrar su longitud
  * -Buscar algun elemento
  */
 
-
 //Funcion
 
-function mostrarArray($array){
-    
-    $resultado="";
-    
-    foreach($array as  $numero){
+function mostrarArray($array) {
+
+    $resultado = "";
+
+    foreach ($array as $numero) {
         //$resultado=$resultado.$numero."<br/>";
-        $resultado.= $numero."<br/>";
+        $resultado .= $numero . "<br/>";
     }
-  return $resultado;
+    return $resultado;
 }
 
-
-$numeros=array(11, 43, 3, 4, 2, 5);
+$numeros = array(11, 43, 3, 4, 2, 5);
 
 echo"<h1>Recorrer y mostrar</h1>";
 echo mostrarArray($numeros);
-
 
 sort($numeros);
 

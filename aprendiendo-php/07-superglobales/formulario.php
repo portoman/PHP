@@ -19,9 +19,9 @@
             </p>
             <input type="submit" value="Enviar datos">
         </form>
-        
-        
-         <form method="POST" action="recibir.php">
+
+
+        <form method="POST" action="recibir.php">
             <p>
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre">

@@ -1,7 +1,7 @@
 <?php
 
-/* 
-Condicionales
+/*
+  Condicionales
  *
  */
 
@@ -27,56 +27,53 @@ Condicionales
  * 
  */
 
-$color="rojo";
+$color = "rojo";
 
-if($color=="rojo"){
+if ($color == "rojo") {
     echo "El color es rojo";
-}else{
+} else {
     echo "El color no es rojo";
 }
 
 echo "<br>";
 
-$anho=2021;
+$anho = 2021;
 
-if($anho==2021){
+if ($anho == 2021) {
     echo "Estamos en 2021";
-}else{
+} else {
     echo "No estamos en 2021";
 }
 
 echo "<br>";
 
-
-
 //Elseif
 
 
-$dia=4;
+$dia = 4;
 
-if($dia==1){
+if ($dia == 1) {
     echo "Es lunes";
-}elseif($dia == 2){
+} elseif ($dia == 2) {
     echo "Es martes";
-}elseif($dia==3){
+} elseif ($dia == 3) {
     echo "Es miércoles";
-}elseif($dia==4){
+} elseif ($dia == 4) {
     echo "Es jueves";
-}elseif($dia==5){
+} elseif ($dia == 5) {
     echo "Es viernes";
-}elseif($dia==6){
+} elseif ($dia == 6) {
     echo "Es sábado";
-}elseif($dia==7){
+} elseif ($dia == 7) {
     echo "Es domingo";
 }
 
 echo "<br>";
 
-
 //SWITCH
-$dia=4;
+$dia = 4;
 
-switch ($dia){
+switch ($dia) {
     case 1:
         echo"Lunes";
         break;
@@ -94,12 +91,10 @@ switch ($dia){
         break;
     default:
         "Es fin de semana";
-    
 }
 
 
 echo "<br>";
-
 
 //GOTO: Para saltarse trozos de código
 
@@ -112,4 +107,4 @@ echo "<h3>Instrucción 4</h3>";
 echo "<h3>Instrucción 5</h3>";
 
 marca:
-    echo "<h1>Me he saltado 4 echos</h1>";
+echo "<h1>Me he saltado 4 echos</h1>";

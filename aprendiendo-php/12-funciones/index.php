@@ -117,18 +117,22 @@ echo"<hr/>";
 
 //Funciones dentro de otras
 
-function getNombre($nombre){
-$texto = "El nombre es: $nombre";
-return $texto;
-};
+function getNombre($nombre) {
+    $texto = "El nombre es: $nombre";
+    return $texto;
+}
 
-function getApellido($apellido){
-$texto = "El apellido es: $apellido";
-return $texto;
-};
+;
+
+function getApellido($apellido) {
+    $texto = "El apellido es: $apellido";
+    return $texto;
+}
+
+;
 
 function devuelveNombreApellido($nombre, $apellido) {
-    $texto = getNombre($nombre). "<br/>" .getApellido($apellido);
+    $texto = getNombre($nombre) . "<br/>" . getApellido($apellido);
     return $texto;
 }
 

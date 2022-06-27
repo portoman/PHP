@@ -1,7 +1,6 @@
 <?php
 
 //Variables superglobales
-
 //Variables de servidor
 echo '<h1>';
 echo $_SERVER['SERVER_ADDR'];

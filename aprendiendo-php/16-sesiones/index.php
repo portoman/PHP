@@ -1,7 +1,7 @@
 <?php
 
-/* 
- *Sesión: Almacena y persiste datos del usuario mientras que navega en un sitio web 
+/*
+ * Sesión: Almacena y persiste datos del usuario mientras que navega en un sitio web 
  * hasta que cierra sesión o cierra el navegador
  */
 
@@ -10,10 +10,10 @@
 session_start();
 
 //Variable local
-$variable_normal="Soy una cadena de texto";
+$variable_normal = "Soy una cadena de texto";
 
 //Variable de sesión
-$_SESSION['variable_persistente']="HOLA SOY UNA SESION ACTIVA";
+$_SESSION['variable_persistente'] = "HOLA SOY UNA SESION ACTIVA";
 
-echo $variable_normal."<br/>";
+echo $variable_normal . "<br/>";
 echo $_SESSION['variable_persistente'];

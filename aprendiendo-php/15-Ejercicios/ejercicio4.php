@@ -1,7 +1,7 @@
 <?php
 
-/* 
-Crear un array con el contenido de la tabla:
+/*
+  Crear un array con el contenido de la tabla:
  * 
  * ACCION      Aventura       Deportes
  * Gta          Assasins        Fifa
@@ -11,10 +11,10 @@ Crear un array con el contenido de la tabla:
  */
 
 
-$videojuegos=array(
-    'accion' =>array('GTA', 'COD', 'PUGB'),
-    'aventura' =>array('Assasins', 'Mario', 'Crash'),
-    'deportes' =>array('FIFA', 'NBA', 'MOTO GP')
+$videojuegos = array(
+    'accion' => array('GTA', 'COD', 'PUGB'),
+    'aventura' => array('Assasins', 'Mario', 'Crash'),
+    'deportes' => array('FIFA', 'NBA', 'MOTO GP')
 );
 
 var_dump($videojuegos);
