@@ -43,7 +43,7 @@
         </div>
 
         <div id="register" class="bloque">
-            <h3>Resgistrate</h3>
+            <h3>Registrate</h3>
 
             <!-- Mostrar errores -->
             <?php if (isset($_SESSION['completado'])): ?>

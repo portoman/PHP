@@ -1,38 +1,33 @@
-<?php
+<?php require_once 'includes/cabecera.php'; ?>
+		
+<?php require_once 'includes/lateral.php'; ?>
+		
+<!-- CAJA PRINCIPAL -->
+<div id="principal">
+	<h1>Ultimas entradas</h1>
+	
+	<?php 
+		$entradas = conseguirEntradas($db, true);
+		if(!empty($entradas)):
+			while($entrada = mysqli_fetch_assoc($entradas)):
+	?>
+				<article class="entrada">
+					<a href="entrada.php?id=<?=$entrada['id']?>">
+						<h2><?=$entrada['titulo']?></h2>
+						<span class="fecha"><?=$entrada['categoria'].' | '.$entrada['fecha']?></span>
+						<p>
+							<?=substr($entrada['descripcion'], 0, 180)."..."?>
+						</p>
+					</a>
+				</article>
+	<?php
+			endwhile;
+		endif;
+	?>
 
-//Conectar a la base de datos
-
-$conexion = mysqli_connect("localhost", "root", "", "phpmysql");
-
-//Comprobar si la conexion es correcta
-
-if (mysqli_connect_errno()) {
-    echo "La conexion a la base de datos MySQL ha fallado: " . mysqli_connect_error();
-} else {
-    echo "Conexión realizada correctamente";
-}
-
-//Consulta para configurar la codificacion de caracteres
-
-mysqli_query($conexion, "SET NAMES 'utf8'");
-
-//Consulta SELECT desde PHP
-
-$query = mysqli_query($conexion, "SELECT * FROM notas");
-
-while ($nota = mysqli_fetch_assoc($query)) {
-    echo '<h2>' . $nota['titulo'] . '</h2>';
-    echo $nota['descripcion'] . '<br/>';
-}
-
-//Insertar en la base de datos desde PHP
-
-$sql = "INSERT INTO notas VALUES(null,'Nota desde PHP','Esto es una nota desde PHP','green')";
-
-$insert = mysqli_query($conexion, $sql);
-
-if ($insert) {
-    echo "Datos insertados correctamente";
-} else {
-    echo "Error: " . mysqli_error($conexion);
-}
+	<div id="ver-todas">
+		<a href="entradas.php">Ver todas las entradas</a>
+	</div>
+</div> <!--fin principal-->
+			
+<?php require_once 'includes/pie.php'; ?>
